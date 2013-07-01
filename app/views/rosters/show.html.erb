@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Full name:</b>
+  <%= @roster.full_name %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @roster.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @roster.last_name %>
+</p>
+
+<p>
+  <b>Jersey:</b>
+  <%= @roster.jersey %>
+</p>
+
+<p>
+  <b>Roster position:</b>
+  <%= @roster.roster_position %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @roster.height %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @roster.weight %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @roster.age %>
+</p>
+
+<p>
+  <b>Experience:</b>
+  <%= @roster.experience %>
+</p>
+
+<p>
+  <b>College:</b>
+  <%= @roster.college %>
+</p>
+
+<p>
+  <b>Player image:</b>
+  <%= @roster.player_image %>
+</p>
+
+<p>
+  <b>Player full image:</b>
+  <%= @roster.player_full_image %>
+</p>
+
+<p>
+  <b>Latest news:</b>
+  <%= @roster.latest_news %>
+</p>
+
+
+<%= link_to 'Edit', edit_roster_path(@roster) %> |
+<%= link_to 'Back', rosters_path %>

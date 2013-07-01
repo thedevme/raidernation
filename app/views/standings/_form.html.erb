@@ -1,0 +1,101 @@
+<%= form_for(@standing) do |f| %>
+  <% if @standing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@standing.errors.count, "error") %> prohibited this standing from being saved:</h2>
+
+      <ul>
+      <% @standing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :display_order %><br />
+    <%= f.text_field :display_order %>
+  </div>
+  <div class="field">
+    <%= f.label :abbr %><br />
+    <%= f.text_field :abbr %>
+  </div>
+  <div class="field">
+    <%= f.label :display_name %><br />
+    <%= f.text_field :display_name %>
+  </div>
+  <div class="field">
+    <%= f.label :conference %><br />
+    <%= f.text_field :conference %>
+  </div>
+  <div class="field">
+    <%= f.label :division %><br />
+    <%= f.text_field :division %>
+  </div>
+  <div class="field">
+    <%= f.label :conference_rank %><br />
+    <%= f.number_field :conference_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :division_rank %><br />
+    <%= f.number_field :division_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br />
+    <%= f.number_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :losses %><br />
+    <%= f.number_field :losses %>
+  </div>
+  <div class="field">
+    <%= f.label :ties %><br />
+    <%= f.number_field :ties %>
+  </div>
+  <div class="field">
+    <%= f.label :pct %><br />
+    <%= f.text_field :pct %>
+  </div>
+  <div class="field">
+    <%= f.label :home_record %><br />
+    <%= f.text_field :home_record %>
+  </div>
+  <div class="field">
+    <%= f.label :road_record %><br />
+    <%= f.text_field :road_record %>
+  </div>
+  <div class="field">
+    <%= f.label :division_record %><br />
+    <%= f.text_field :division_record %>
+  </div>
+  <div class="field">
+    <%= f.label :conference_record %><br />
+    <%= f.text_field :conference_record %>
+  </div>
+  <div class="field">
+    <%= f.label :points_for %><br />
+    <%= f.number_field :points_for %>
+  </div>
+  <div class="field">
+    <%= f.label :points_allowed %><br />
+    <%= f.number_field :points_allowed %>
+  </div>
+  <div class="field">
+    <%= f.label :difference %><br />
+    <%= f.number_field :difference %>
+  </div>
+  <div class="field">
+    <%= f.label :current_streak %><br />
+    <%= f.text_field :current_streak %>
+  </div>
+  <div class="field">
+    <%= f.label :clinched_playoffs %><br />
+    <%= f.check_box :clinched_playoffs %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

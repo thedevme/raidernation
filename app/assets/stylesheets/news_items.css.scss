@@ -1,0 +1,56 @@
+// Place all the styles related to the NewsItems controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+small 
+{
+	margin-left: 15px;
+	color: green;
+}
+
+h1
+{
+	color: #000;
+}
+
+.whitebg
+{
+	background: #fff;
+}
+
+.container
+{
+	margin: 10px 0;
+}
+
+nav
+{
+	margin: 20px 0;
+}
+
+
+span
+{
+	a 
+	{
+		text-align:center;
+	}
+	margin-right: 10px;
+}
+
+.page.current
+{
+	background: #2BA6CB;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+}
+
+
+.row ul li 
+{
+	list-style-type: none;
+}
+

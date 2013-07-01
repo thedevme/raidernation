@@ -1,0 +1,69 @@
+<%= form_for(@roster) do |f| %>
+  <% if @roster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@roster.errors.count, "error") %> prohibited this roster from being saved:</h2>
+
+      <ul>
+      <% @roster.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :full_name %><br />
+    <%= f.text_field :full_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :jersey %><br />
+    <%= f.number_field :jersey %>
+  </div>
+  <div class="field">
+    <%= f.label :roster_position %><br />
+    <%= f.text_field :roster_position %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :experience %><br />
+    <%= f.text_field :experience %>
+  </div>
+  <div class="field">
+    <%= f.label :college %><br />
+    <%= f.text_field :college %>
+  </div>
+  <div class="field">
+    <%= f.label :player_image %><br />
+    <%= f.text_field :player_image %>
+  </div>
+  <div class="field">
+    <%= f.label :player_full_image %><br />
+    <%= f.text_field :player_full_image %>
+  </div>
+  <div class="field">
+    <%= f.label :latest_news %><br />
+    <%= f.text_area :latest_news %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

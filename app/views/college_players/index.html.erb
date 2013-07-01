@@ -1,0 +1,75 @@
+<h1>Listing college_players</h1>
+
+<table>
+  <tr>
+    <th>Full name</th>
+    <th>Position</th>
+    <th>College</th>
+    <th>Height</th>
+    <th>Arm length</th>
+    <th>Weight</th>
+    <th>Hands</th>
+    <th>Comparison</th>
+    <th>Strengths</th>
+    <th>Weakness</th>
+    <th>Forty dash</th>
+    <th>Vert jump</th>
+    <th>Broad jump</th>
+    <th>Three yd cone</th>
+    <th>Twenty yd shuttle</th>
+    <th>Sixty yd shuttle</th>
+    <th>Draft round</th>
+    <th>Bench</th>
+    <th>Draft pick</th>
+    <th>Overview</th>
+    <th>Espn overall rating</th>
+    <th>Cbs overall rating</th>
+    <th>Espn position rating</th>
+    <th>Cbs position rating</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Overall draft position</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @college_players.each do |college_player| %>
+  <tr>
+    <td><%= college_player.full_name %></td>
+    <td><%= college_player.position %></td>
+    <td><%= college_player.college %></td>
+    <td><%= college_player.height %></td>
+    <td><%= college_player.arm_length %></td>
+    <td><%= college_player.weight %></td>
+    <td><%= college_player.hands %></td>
+    <td><%= college_player.comparison %></td>
+    <td><%= college_player.strengths %></td>
+    <td><%= college_player.weakness %></td>
+    <td><%= college_player.forty_dash %></td>
+    <td><%= college_player.vert_jump %></td>
+    <td><%= college_player.broad_jump %></td>
+    <td><%= college_player.three_yd_cone %></td>
+    <td><%= college_player.twenty_yd_shuttle %></td>
+    <td><%= college_player.sixty_yd_shuttle %></td>
+    <td><%= college_player.draft_round %></td>
+    <td><%= college_player.bench %></td>
+    <td><%= college_player.draft_pick %></td>
+    <td><%= college_player.overview %></td>
+    <td><%= college_player.espn_overall_rating %></td>
+    <td><%= college_player.cbs_overall_rating %></td>
+    <td><%= college_player.espn_position_rating %></td>
+    <td><%= college_player.cbs_position_rating %></td>
+    <td><%= college_player.first_name %></td>
+    <td><%= college_player.last_name %></td>
+    <td><%= college_player.overall_draft_position %></td>
+    <td><%= link_to 'Show', college_player %></td>
+    <td><%= link_to 'Edit', edit_college_player_path(college_player) %></td>
+    <td><%= link_to 'Destroy', college_player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New College player', new_college_player_path %>

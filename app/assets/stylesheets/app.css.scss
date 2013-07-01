@@ -1,0 +1,523 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.antennacondblack 
+{
+  font-family: "Antenna Cond Black";
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 
+{
+	@extend .antennacondblack;
+}
+
+
+
+.feature-pop
+{
+	background: #CCC;
+	width: 100%;
+}
+
+
+.feature 
+{
+	padding:30px;
+
+	&.white img
+	{
+		float: right;
+		background: #fff;
+	}
+
+	&.gray 
+	{
+		background: #eee;
+		border-top: 1px solid #CCC;
+	}
+}
+
+.depthchart-icon
+{
+	padding-top: 10px;
+}
+.container.top-bar
+{
+	margin-bottom: 0;
+}
+header h1
+{
+	color: #fff;
+	font-weight: 500;
+}
+header h4
+{
+	color: #fff;
+	font-weight: 300;
+}
+.app-pov
+{
+	background: url('../assets/header-bg.png') no-repeat center center;
+	color: white;
+	width: 100%;
+}
+.app-content
+{
+	top: -40px;
+}
+
+.interior-content .container-overlap
+{
+	margin-top: -40px;
+}
+.page-padding
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.top-bar
+{
+	background: #fff;
+	height: 91px !important;
+	line-height: 45px;
+	margin: 0 0 30px;
+	padding: 0;
+	width: 100% !important;
+}
+
+.top-bar .attached
+{
+	background: #fff;
+	border: 0 solid #000;
+	color: #fff;
+	font-family: "Helvetica", Arial, sans-serif;
+	height: 91px;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+
+.feature-copy
+{
+	h2
+	{
+		font-size: 27px;
+	}
+}
+.feature-content
+{
+	background: #eee;
+	width: 100%;
+}
+.top-bar a
+{
+	color: #fff;
+	font-weight: bold;
+}
+.top-bar .attached>.name span>a
+{
+	background-image: none;
+}
+.top-bar .attached>ul
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.top-bar .attached>ul>li
+{
+	border-right: 1px solid #333;
+	display: block;
+	float: left;
+	height: 45px;
+	position: relative;
+}
+.top-bar .attached>ul>li>a,.top-bar .attached>ul>li>span
+{
+	border-right: 1px solid #000;
+	display: block;
+	font-weight: bold;
+	height: 45px;
+	padding: 0 20px;
+}
+.top-bar .attached>ul>li>a small
+{
+	color: #999;
+	font-size: 12px;
+	font-weight: normal;
+}
+.top-bar .attached>ul>li form
+{
+	border-right: 1px solid #000;
+	height: 45px;
+	padding: 0 12px;
+}
+.top-bar .attached>ul>li form label,.top-bar .attached>ul>li form .input-text
+{
+	display: inline;
+}
+.top-bar .attached>ul>li form label
+{
+	color: #999;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 0 8px;
+	text-transform: uppercase;
+}
+.top-bar .attached .input-text
+{
+	background: #555;
+	border: 1px solid #292929;
+	border-radius: 2px;
+	color: #fff;
+	padding: 1px 3px 4px;
+	width: 120px;
+}
+.top-bar .attached .button
+{
+	padding: 3px 11px 4px;
+}
+.top-bar .attached>ul.right>li
+{
+	border-left: 1px solid #000;
+	border-right: none;
+}
+.top-bar .attached>ul.right>li>a
+{
+	border-left: 1px solid #333;
+	border-right: none;
+}
+// .top-bar .attached>ul .dropdown
+// {
+// 	background: #222;
+// 	display: none;
+// 	left: 0;
+// 	margin: 0;
+// 	padding: 8px 0;
+// 	position: absolute;
+// 	top: 45px;
+// 	width: auto;
+// 	z-index: 101;
+// }
+// .top-bar .attached>ul>li>.dropdown
+// {
+// 	min-width: 100%;
+// }
+// .top-bar .attached>ul.right .dropdown
+// {
+// 	left: auto;
+// 	right: -1px;
+// }
+// .top-bar .attached>ul .dropdown>li
+// {
+// 	display: block;
+// 	line-height: 1.4;
+// 	margin: 0;
+// 	padding: 0 20px;
+// 	position: relative;
+// 	white-space: nowrap;
+// }
+// .top-bar .attached>ul .dropdown>li.divider
+// {
+// 	border-bottom: 1px solid #333;
+// 	border-top: 1px solid #111;
+// 	height: 0;
+// 	margin: 6px 0;
+// 	padding: 0;
+// }
+// .top-bar .attached>ul .dropdown>li a
+// {
+// 	display: block;
+// 	font-weight: normal;
+// 	margin: 0 -20px;
+// 	padding: 4px 20px;
+// }
+// .top-bar .attached>ul .dropdown>li label
+// {
+// 	color: #999;
+// 	font-size: 10px;
+// 	font-weight: bold;
+// 	margin: 0 0 8px;
+// 	text-transform: uppercase;
+// }
+// .top-bar .attached>ul .dropdown>li.has-dropdown>a,.top-bar .attached>ul .dropdown>li.has-dropdown>span
+// {
+// 	background-image: url(http://www.zurb.com/assets/top-bar/dropdown-sprite.png);
+// 	background-repeat: no-repeat;
+// }
+// .top-bar .attached>ul.left .dropdown>li>a,.top-bar .attached>ul.left .dropdown>li>span
+// {
+// 	background-position: right -3px;
+// 	padding-right: 28px;
+// }
+// .top-bar .attached>ul.right .dropdown>li>a,.top-bar .attached>ul.right .dropdown>li>span
+// {
+// 	background-position: left -33px;
+// 	padding-left: 28px;
+// }
+// .attached>ul .dropdown li .dropdown
+// {
+// 	border-left: 1px solid #111;
+// 	left: 100%;
+// 	top: -8px;
+// }
+// .attached>ul.right .dropdown li .dropdown
+// {
+// 	border-left: none;
+// 	border-right: 1px solid #111;
+// 	left: auto;
+// 	right: 100%;
+// }
+
+// .lt-ie9 .top-bar .attached>ul>li:hover>a,.top-bar .attached>ul>li:hover>span
+// {
+// 	background: #222;
+// }
+// .lt-ie9 .top-bar .attached>ul>li:hover>span
+// {
+// 	cursor: default;
+// }
+// .lt-ie9 .top-bar .attached>ul>li:hover>span+.dropdown,.lt-ie9 .top-bar .attached>ul>li:hover>a+.dropdown
+// {
+// 	display: block;
+// }
+// .lt-ie9 .top-bar .attached>ul .dropdown>li:hover>a
+// {
+// 	background-color: #333;
+// }
+// .lt-ie9 .attached .dropdown li:hover>a+.dropdown,.lt-ie9 .attached .dropdown li:hover>span+.dropdown
+// {
+// 	display: block;
+// }
+
+.palmer
+{
+	float: right;
+	xpadding: 0px 45% 0 0px;
+}
+.white
+{
+	background: #fff;
+}
+.lightgray
+{
+	background: #CCC;
+}
+.darkgray
+{
+	background: #EEE;
+}
+.raider-features-copy
+{
+	padding: 30px 10px 60px 54%;
+	position: relative;
+}
+.raider-features-copy img
+{
+	border: none;
+	bottom: 0;
+	display: block;
+	height: auto;
+	left: 15px;
+	position: absolute;
+}
+ul#raider-features
+{
+	list-style: none;
+	overflow: hidden;
+	padding: 0 14px;
+}
+ul#raider-features li
+{
+	border-bottom: 1px solid #999;
+	display: block;
+	overflow: hidden;
+}
+ul#raider-features li p
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 1.4em;
+}
+
+footer
+{
+	color: white;
+	margin: 0px 14px;
+	font-size: 11px;
+}
+
+.app-features
+{
+	position: relative;
+}
+
+.app-pov ul
+{
+	margin: 63% 0 0 13%;
+
+	li 
+	{
+		list-style: none;
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+}
+
+.secondary.button
+{
+	margin: 13px 0 38px 65px;
+	padding: 15px 0;
+	width: 38%;
+}
+
+
+
+@media only screen and (max-width : 320px)
+{
+	.app-pov ul
+	{
+		margin: 44% 0 0 8%;
+
+		li 
+		{
+			list-style: none;
+			font-size: 0.8em;
+			line-height: 1.3em;
+		}
+	}
+
+	.secondary.button
+	{
+		margin: 10px 0 35px 20px;
+		padding: 14px 0;
+		width: 87%;
+	}
+
+	.raider-features-copy
+	{
+		img 
+		{
+			left: 30px;
+		}
+
+		padding: 30px 20px 150px 5%;
+		position: relative;
+	}
+
+
+	ul#raider-features li img
+	{
+		
+	}
+
+	.raider-news-icon 
+	{
+		
+
+	}
+
+	.feature 
+	{
+		padding:10px;
+		
+		h2 
+		{
+			font-size: 14px;
+		}
+	}
+
+	.interior-content .container-overlap
+	{
+		margin-top: -20px;
+	}
+}
+
+@media (min-width : 801px) and (max-width : 1024px)
+{
+// 	.raider-features-copy 
+// 	{
+// 		padding: 30px 20px 150px 5%;
+// 		position: relative;
+// 	}
+
+// 	.raider-features-copy img 
+// 	{
+// 		left: 62px;
+// 	}
+}
+
+@media only screen 
+and (min-width : 321px) 
+{
+	.app-pov ul 
+	{
+		margin: 19% 0 0 0%;
+		text-align: center;
+	}
+
+	.secondary.button
+	{
+		margin: 17px 0 59px 187px;
+		padding: 15px 0;
+		width: 38%;
+	}
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+	.top-bar .attached>ul>li:hover>a,.top-bar .attached>ul>li:hover>span
+	{
+		background: #222;
+	}
+	.top-bar .attached>ul>li:hover>span
+	{
+		cursor: default;
+	}
+}
+@media (min-width : 320px) and (max-width : 480px) 
+{
+	.raider-features-copy 
+	{
+		padding: 30px 20px 150px 5%;
+		position: relative;
+	}
+
+// 	.raider-features-copy img 
+// 	{
+// 		left: 112px;
+// 	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+// 	.raider-features-copy 
+// 	{
+// 		padding: 30px 10px 60px 54%;
+// 		position: relative;
+// 	}
+
+}
+
+@media (min-width : 481px) and (max-width : 800px) 
+{
+
+	.raider-features-copy 
+	{
+		padding: 30px 20px 150px 5%;
+		position: relative;
+	}
+
+	.raider-features-copy img 
+	{
+		left: 32px;
+	}
+}
+
+
+

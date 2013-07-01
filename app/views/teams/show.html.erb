@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Team division:</b>
+  <%= @team.division %>
+</p>
+
+<p>
+  <b>Team name:</b>
+  <%= @team.name %>
+</p>
+
+<p>
+  <b>Wins:</b>
+  <%= @team.wins %>
+</p>
+
+<p>
+  <b>Losses:</b>
+  <%= @team.losses %>
+</p>
+
+<p>
+  <b>Ties:</b>
+  <%= @team.ties %>
+</p>
+
+<p>
+  <b>Win pct:</b>
+  <%= @team.win_pct %>
+</p>
+
+<p>
+  <b>Home record:</b>
+  <%= @team.home_record %>
+</p>
+
+<p>
+  <b>Road record:</b>
+  <%= @team.road_record %>
+</p>
+
+<p>
+  <b>Division record:</b>
+  <%= @team.division_record %>
+</p>
+
+<p>
+  <b>Conference:</b>
+  <%= @team.conf_record %>
+</p>
+
+<p>
+  <b>Points for:</b>
+  <%= @team.points_for %>
+</p>
+
+<p>
+  <b>Points allowed:</b>
+  <%= @team.points_allowed %>
+</p>
+
+<p>
+  <b>Point difference:</b>
+  <%= @team.point_diff %>
+</p>
+
+<p>
+  <b>Current streak:</b>
+  <%= @team.current_streak %>
+</p>
+
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

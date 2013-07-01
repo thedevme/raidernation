@@ -1,0 +1,57 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :opponent %><br />
+    <%= f.text_field :opponent %>
+  </div>
+  <div class="field">
+    <%= f.label :game_date %><br />
+    <%= f.date_select :game_date %>
+  </div>
+  <div class="field">
+    <%= f.label :game_time %><br />
+    <%= f.text_field :game_time %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :result %><br />
+    <%= f.text_field :result %>
+  </div>
+  <div class="field">
+    <%= f.label :tv %><br />
+    <%= f.text_field :tv %>
+  </div>
+  <div class="field">
+    <%= f.label :home_score %><br />
+    <%= f.text_field :home_score %>
+  </div>
+  <div class="field">
+    <%= f.label :away_score %><br />
+    <%= f.text_field :away_score %>
+  </div>
+  <div class="field">
+    <%= f.label :raider_link %><br />
+    <%= f.text_field :raider_link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

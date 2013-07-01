@@ -1,0 +1,26 @@
+<div class="row whitebg">
+	<div class="twelve columns">
+		<p id="notice"><%= notice %></p>
+		<p>
+		  <b>Title:</b>
+		  <%= @news_item.title %>
+		</p>
+
+		<p>
+		  <b>Description:</b>
+		  <%= @news_item.desc %>
+		</p>
+
+		<p>
+		  <b>Pub date:</b>
+		  <%= @news_item.pub_date %>
+		</p>
+
+		<p>Ignore: <%= @news_item.ignore %></p>
+		<p><b>Link:</b> <%= @news_item.link %></p>
+
+
+		<%= link_to 'Edit', edit_news_item_path(@news_item) %> |
+		<%= link_to 'Back', news_items_path %>
+	</div>
+</div>

@@ -1,0 +1,49 @@
+<h1>Listing teams</h1>
+
+<table>
+  <tr>
+    <th>Team division</th>
+    <th>Team name</th>
+    <th>Wins</th>
+    <th>Losses</th>
+    <th>Ties</th>
+    <th>Win pct</th>
+    <th>Home record</th>
+    <th>Road record</th>
+    <th>Division record</th>
+    <th>Conference</th>
+    <th>Points for</th>
+    <th>Points allowed</th>
+    <th>Point difference</th>
+    <th>Current streak</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @teams.each do |team| %>
+  <tr>
+    <td><%= team.division %></td>
+    <td><%= team.name %></td>
+    <td><%= team.wins %></td>
+    <td><%= team.losses %></td>
+    <td><%= team.ties %></td>
+    <td><%= team.win_pct %></td>
+    <td><%= team.home_record %></td>
+    <td><%= team.road_record %></td>
+    <td><%= team.division_record %></td>
+    <td><%= team.conf_record %></td>
+    <td><%= team.points_for %></td>
+    <td><%= team.points_allowed %></td>
+    <td><%= team.point_diff %></td>
+    <td><%= team.current_streak %></td>
+    <td><%= link_to 'Show', team %></td>
+    <td><%= link_to 'Edit', edit_team_path(team) %></td>
+    <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Team', new_team_path %>

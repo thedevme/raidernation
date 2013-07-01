@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<!-- Uncomment to make IE8 render like IE7 -->
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+		<!-- Set the viewport width to device width for mobile -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+		<link href="//cloud.webtype.com/css/adfe8ae2-ede0-4743-8ad0-34b1c0a0cfa5.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title><%= content_for?(:title) ? yield(:title) : "Club Raider Nation for Oakland Raiders News & Raiders Schedule" %></title>
+		<!-- Included CSS Files -->
+		<%= stylesheet_link_tag    "application" %>
+		<!-- Included JS Files  -->
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
+	</head>
+	
+	<body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+		<%= yield %>
+	</body>
+</html>

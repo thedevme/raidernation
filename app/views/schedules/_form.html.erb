@@ -1,0 +1,217 @@
+<%= form_for(@schedule) do |f| %>
+  <% if @schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@schedule.errors.count, "error") %> prohibited this schedule from being saved:</h2>
+
+      <ul>
+      <% @schedule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :game_tv %><br />
+    <%= f.text_field :game_tv %>
+  </div>
+  <div class="field">
+    <%= f.label :game_score %><br />
+    <%= f.text_field :game_score %>
+  </div>
+  <div class="field">
+    <%= f.label :game_key %><br />
+    <%= f.text_field :game_key %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :week %><br />
+    <%= f.number_field :week %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :date_time %><br />
+    <%= f.date_select :date_time %>
+  </div>
+  <div class="field">
+    <%= f.label :date_time_est %><br />
+    <%= f.date_select :date_time_est %>
+  </div>
+  <div class="field">
+    <%= f.label :day_of_week %><br />
+    <%= f.text_field :day_of_week %>
+  </div>
+  <div class="field">
+    <%= f.label :month_of_year %><br />
+    <%= f.text_field :month_of_year %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :nfl_type %><br />
+    <%= f.text_field :nfl_type %>
+  </div>
+  <div class="field">
+    <%= f.label :is_current_or_next_game %><br />
+    <%= f.check_box :is_current_or_next_game %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_name %><br />
+    <%= f.text_field :home_team_name %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_short_name %><br />
+    <%= f.text_field :home_team_short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_abbr %><br />
+    <%= f.text_field :home_team_abbr %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_id %><br />
+    <%= f.text_field :home_team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_small_helmet %><br />
+    <%= f.text_field :home_team_small_helmet %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_large_helmet %><br />
+    <%= f.text_field :home_team_large_helmet %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_name %><br />
+    <%= f.text_field :visitor_team_name %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_short_name %><br />
+    <%= f.text_field :visitor_team_short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_abbr %><br />
+    <%= f.text_field :visitor_team_abbr %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_id %><br />
+    <%= f.text_field :visitor_team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_small_helmet %><br />
+    <%= f.text_field :visitor_team_small_helmet %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_large_helmet %><br />
+    <%= f.text_field :visitor_team_large_helmet %>
+  </div>
+  <div class="field">
+    <%= f.label :opponent_team_name %><br />
+    <%= f.text_field :opponent_team_name %>
+  </div>
+  <div class="field">
+    <%= f.label :opponent_team_short_name %><br />
+    <%= f.text_field :opponent_team_short_name %>
+  </div>
+  <div class="field">
+    <%= f.label :game_played_at %><br />
+    <%= f.text_field :game_played_at %>
+  </div>
+  <div class="field">
+    <%= f.label :outcome %><br />
+    <%= f.text_field :outcome %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_total %><br />
+    <%= f.text_field :visitor_team_point_total %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_q1 %><br />
+    <%= f.text_field :visitor_team_point_q1 %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_q2 %><br />
+    <%= f.text_field :visitor_team_point_q2 %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_q3 %><br />
+    <%= f.text_field :visitor_team_point_q3 %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_q4 %><br />
+    <%= f.text_field :visitor_team_point_q4 %>
+  </div>
+  <div class="field">
+    <%= f.label :visitor_team_point_ot %><br />
+    <%= f.text_field :visitor_team_point_ot %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_total %><br />
+    <%= f.text_field :home_team_point_total %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_q1 %><br />
+    <%= f.text_field :home_team_point_q1 %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_q2 %><br />
+    <%= f.text_field :home_team_point_q2 %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_q3 %><br />
+    <%= f.text_field :home_team_point_q3 %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_q4 %><br />
+    <%= f.text_field :home_team_point_q4 %>
+  </div>
+  <div class="field">
+    <%= f.label :home_team_point_ot %><br />
+    <%= f.text_field :home_team_point_ot %>
+  </div>
+  <div class="field">
+    <%= f.label :score %><br />
+    <%= f.text_field :score %>
+  </div>
+  <div class="field">
+    <%= f.label :phase %><br />
+    <%= f.text_field :phase %>
+  </div>
+  <div class="field">
+    <%= f.label :clock %><br />
+    <%= f.text_field :clock %>
+  </div>
+  <div class="field">
+    <%= f.label :is_tie %><br />
+    <%= f.text_field :is_tie %>
+  </div>
+  <div class="field">
+    <%= f.label :winner_team_id %><br />
+    <%= f.text_field :winner_team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pre_game_link %><br />
+    <%= f.text_field :pre_game_link %>
+  </div>
+  <div class="field">
+    <%= f.label :post_game_link %><br />
+    <%= f.text_field :post_game_link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

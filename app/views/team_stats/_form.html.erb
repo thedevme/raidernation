@@ -1,0 +1,81 @@
+<%= form_for(@team_stat) do |f| %>
+  <% if @team_stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team_stat.errors.count, "error") %> prohibited this team_stat from being saved:</h2>
+
+      <ul>
+      <% @team_stat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ppg_avg %><br />
+    <%= f.text_field :ppg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :ppg_rank %><br />
+    <%= f.number_field :ppg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :ypg_avg %><br />
+    <%= f.text_field :ypg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :ypg_rank %><br />
+    <%= f.number_field :ypg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :passing_ypg_avg %><br />
+    <%= f.text_field :passing_ypg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :passing_ypg_rank %><br />
+    <%= f.number_field :passing_ypg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :rushing_ypg_avg %><br />
+    <%= f.text_field :rushing_ypg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :rushing_ypg_rank %><br />
+    <%= f.number_field :rushing_ypg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :pts_apg_avg %><br />
+    <%= f.text_field :pts_apg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :pts_apg_rank %><br />
+    <%= f.number_field :pts_apg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :yds_apg_avg %><br />
+    <%= f.text_field :yds_apg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :yds_apg_rank %><br />
+    <%= f.number_field :yds_apg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :pass_yds_apg_avg %><br />
+    <%= f.text_field :pass_yds_apg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :pass_yds_apg_rank %><br />
+    <%= f.number_field :pass_yds_apg_rank %>
+  </div>
+  <div class="field">
+    <%= f.label :rush_yds_apg_avg %><br />
+    <%= f.text_field :rush_yds_apg_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :rush_yds_apg_rank %><br />
+    <%= f.number_field :rush_yds_apg_rank %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

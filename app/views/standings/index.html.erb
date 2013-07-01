@@ -1,0 +1,64 @@
+<h1>Listing standings</h1>
+
+<table>
+  <tr>
+    <th>Team</th>
+    <th>Abbr</th>
+    <th>Display name</th>
+    <th>Conference</th>
+    <th>Division</th>
+    <th>Conference rank</th>
+    <th>Division rank</th>
+    <th>Wins</th>
+    <th>Losses</th>
+    <th>Ties</th>
+    <th>Pct</th>
+    <th>Home record</th>
+    <th>Road record</th>
+    <th>Division record</th>
+    <th>Conference record</th>
+    <th>Points for</th>
+    <th>Points allowed</th>
+    <th>Difference</th>
+    <th>Current streak</th>
+    <th>Clinched playoffs</th>
+    <th>Display Order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @standings.each do |standing| %>
+  <tr>
+    <td><%= standing.team_id %></td>
+    <td><%= standing.abbr %></td>
+    <td><%= standing.display_name %></td>
+    <td><%= standing.conference %></td>
+    <td><%= standing.division %></td>
+    <td><%= standing.conference_rank %></td>
+    <td><%= standing.division_rank %></td>
+    <td><%= standing.wins %></td>
+    <td><%= standing.losses %></td>
+    <td><%= standing.ties %></td>
+    <td><%= standing.pct %></td>
+    <td><%= standing.home_record %></td>
+    <td><%= standing.road_record %></td>
+    <td><%= standing.division_record %></td>
+    <td><%= standing.conference_record %></td>
+    <td><%= standing.points_for %></td>
+    <td><%= standing.points_allowed %></td>
+    <td><%= standing.difference %></td>
+    <td><%= standing.current_streak %></td>
+    <td><%= standing.clinched_playoffs %></td>
+    <td><%= standing.display_order %></td>
+
+    <td><%= link_to 'Show', standing %></td>
+    <td><%= link_to 'Edit', edit_standing_path(standing) %></td>
+    <td><%= link_to 'Destroy', standing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Standing', new_standing_path %>

@@ -1,0 +1,132 @@
+<%= form_for(@college_player) do |f| %>
+  <% if @college_player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@college_player.errors.count, "error") %> prohibited this college_player from being saved:</h2>
+
+      <ul>
+      <% @college_player.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :full_name %><br />
+    <%= f.text_field :full_name %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :college %><br />
+    <%= f.text_field :college %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :arm_length %><br />
+    <%= f.text_field :arm_length %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :hands %><br />
+    <%= f.text_field :hands %>
+  </div>
+  <div class="field">
+    <%= f.label :comparison %><br />
+    <%= f.text_field :comparison %>
+  </div>
+  <div class="field">
+    <%= f.label :strengths %><br />
+    <%= f.text_field :strengths %>
+  </div>
+  <div class="field">
+    <%= f.label :weakness %><br />
+    <%= f.text_field :weakness %>
+  </div>
+  <div class="field">
+    <%= f.label :forty_dash %><br />
+    <%= f.text_field :forty_dash %>
+  </div>
+  <div class="field">
+    <%= f.label :vert_jump %><br />
+    <%= f.text_field :vert_jump %>
+  </div>
+  <div class="field">
+    <%= f.label :broad_jump %><br />
+    <%= f.text_field :broad_jump %>
+  </div>
+  <div class="field">
+    <%= f.label :three_yd_cone %><br />
+    <%= f.text_field :three_yd_cone %>
+  </div>
+  <div class="field">
+    <%= f.label :twenty_yd_shuttle %><br />
+    <%= f.text_field :twenty_yd_shuttle %>
+  </div>
+  <div class="field">
+    <%= f.label :sixty_yd_shuttle %><br />
+    <%= f.text_field :sixty_yd_shuttle %>
+  </div>
+  <div class="field">
+    <%= f.label :draft_round %><br />
+    <%= f.text_field :draft_round %>
+  </div>
+  <div class="field">
+    <%= f.label :bench %><br />
+    <%= f.text_field :bench %>
+  </div>
+  <div class="field">
+    <%= f.label :draft_pick %><br />
+    <%= f.text_field :draft_pick %>
+  </div>
+  <div class="field">
+    <%= f.label :overview %><br />
+    <%= f.text_field :overview %>
+  </div>
+  <div class="field">
+    <%= f.label :espn_overall_rating %><br />
+    <%= f.text_field :espn_overall_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :cbs_overall_rating %><br />
+    <%= f.text_field :cbs_overall_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :espn_position_rating %><br />
+    <%= f.text_field :espn_position_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :cbs_position_rating %><br />
+    <%= f.text_field :cbs_position_rating %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :overall_draft_position %><br />
+    <%= f.text_field :overall_draft_position %>
+  </div>
+
+
+    <div class="field">
+      <%= f.label :player_image %><br />
+      <%= f.text_field :player_image %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

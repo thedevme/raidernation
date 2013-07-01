@@ -1,0 +1,121 @@
+<h1>Listing schedules</h1>
+
+<table>
+  <tr>
+    <th>Game tv</th>
+    <th>Game score</th>
+    <th>Game key</th>
+    <th>Status</th>
+    <th>Week</th>
+    <th>Date</th>
+    <th>Date time</th>
+    <th>Date time est</th>
+    <th>Day of week</th>
+    <th>Month of year</th>
+    <th>Time</th>
+    <th>Type</th>
+    <th>Nfl type</th>
+    <th>Is current or next game</th>
+    <th>Title</th>
+    <th>Home team name</th>
+    <th>Home team short name</th>
+    <th>Home team abbr</th>
+    <th>Home team</th>
+    <th>Home team small helmet</th>
+    <th>Home team large helmet</th>
+    <th>Visitor team name</th>
+    <th>Visitor team short name</th>
+    <th>Visitor team abbr</th>
+    <th>Visitor team</th>
+    <th>Visitor team small helmet</th>
+    <th>Visitor team large helmet</th>
+    <th>Opponent team name</th>
+    <th>Opponent team short name</th>
+    <th>Game played at</th>
+    <th>Outcome</th>
+    <th>Visitor team point total</th>
+    <th>Visitor team point q1</th>
+    <th>Visitor team point q2</th>
+    <th>Visitor team point q3</th>
+    <th>Visitor team point q4</th>
+    <th>Visitor team point ot</th>
+    <th>Home team point total</th>
+    <th>Home team point q1</th>
+    <th>Home team point q2</th>
+    <th>Home team point q3</th>
+    <th>Home team point q4</th>
+    <th>Home team point ot</th>
+    <th>Score</th>
+    <th>Phase</th>
+    <th>Clock</th>
+    <th>Is tie</th>
+    <th>Winner team</th>
+    <th>Pre game link</th>
+    <th>Post game link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @schedules.each do |schedule| %>
+  <tr>
+    <td><%= schedule.game_tv %></td>
+    <td><%= schedule.game_score %></td>
+    <td><%= schedule.game_key %></td>
+    <td><%= schedule.status %></td>
+    <td><%= schedule.week %></td>
+    <td><%= schedule.date %></td>
+    <td><%= schedule.date_time %></td>
+    <td><%= schedule.date_time_est %></td>
+    <td><%= schedule.day_of_week %></td>
+    <td><%= schedule.month_of_year %></td>
+    <td><%= schedule.time %></td>
+    <td><%= schedule.type %></td>
+    <td><%= schedule.nfl_type %></td>
+    <td><%= schedule.is_current_or_next_game %></td>
+    <td><%= schedule.title %></td>
+    <td><%= schedule.home_team_name %></td>
+    <td><%= schedule.home_team_short_name %></td>
+    <td><%= schedule.home_team_abbr %></td>
+    <td><%= schedule.home_team_id %></td>
+    <td><%= schedule.home_team_small_helmet %></td>
+    <td><%= schedule.home_team_large_helmet %></td>
+    <td><%= schedule.visitor_team_name %></td>
+    <td><%= schedule.visitor_team_short_name %></td>
+    <td><%= schedule.visitor_team_abbr %></td>
+    <td><%= schedule.visitor_team_id %></td>
+    <td><%= schedule.visitor_team_small_helmet %></td>
+    <td><%= schedule.visitor_team_large_helmet %></td>
+    <td><%= schedule.opponent_team_name %></td>
+    <td><%= schedule.opponent_team_short_name %></td>
+    <td><%= schedule.game_played_at %></td>
+    <td><%= schedule.outcome %></td>
+    <td><%= schedule.visitor_team_point_total %></td>
+    <td><%= schedule.visitor_team_point_q1 %></td>
+    <td><%= schedule.visitor_team_point_q2 %></td>
+    <td><%= schedule.visitor_team_point_q3 %></td>
+    <td><%= schedule.visitor_team_point_q4 %></td>
+    <td><%= schedule.visitor_team_point_ot %></td>
+    <td><%= schedule.home_team_point_total %></td>
+    <td><%= schedule.home_team_point_q1 %></td>
+    <td><%= schedule.home_team_point_q2 %></td>
+    <td><%= schedule.home_team_point_q3 %></td>
+    <td><%= schedule.home_team_point_q4 %></td>
+    <td><%= schedule.home_team_point_ot %></td>
+    <td><%= schedule.score %></td>
+    <td><%= schedule.phase %></td>
+    <td><%= schedule.clock %></td>
+    <td><%= schedule.is_tie %></td>
+    <td><%= schedule.winner_team_id %></td>
+    <td><%= schedule.pre_game_link %></td>
+    <td><%= schedule.post_game_link %></td>
+    <td><%= link_to 'Show', schedule %></td>
+    <td><%= link_to 'Edit', edit_schedule_path(schedule) %></td>
+    <td><%= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Schedule', new_schedule_path %>
